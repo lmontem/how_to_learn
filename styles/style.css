@@ -7,6 +7,7 @@
   margin: 0 auto;
   /* this ensures that all content is centered on screens wider than 1600px */
   font-family: 'Helvetica Neue', Arial, sans-serif;
+
 }
 .red-border{
   border: 1px solid red;
@@ -20,11 +21,14 @@
   /* parameters for the header section */
   margin-bottom: 100px;
   display: flex;
+  background-color: #f2f2f2;
+
   }
 
 
 .logo{
   position: absolute;
+  z-index: 2;
 }
 /* does this and subtitle appear in front of other blocks on a smaller screen? */
 .logo_place_header{
@@ -32,7 +36,7 @@
   height: 31px;
   top:30px;
   left:64px;
-  z-index: 1;
+
  }
 
 /*you gotta move this down still but need a break so moved on*/
@@ -40,26 +44,24 @@
   display:flex;
   flex-direction: column-reverse;
   justify-content: space-around;
-  align-items: flex-end;
-
   margin-left:64px;
   width: 730px;
   line-height: 96px;
   font-size: 102px;
   font-weight: bold;
+  z-index: 0;
 
 }
 
 .header__subtitle{
   width: 388px;
   position: absolute;
-  z-index: 1;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
   left: 64px;
   bottom: 30px;
-
+  z-index: 2;
 }
 
 
@@ -70,8 +72,7 @@
   right: 0;
   width: 765px;
   height: 608px;
-
-
+  z-index: 1;
 }
 
 .header__square-pic{
@@ -80,7 +81,8 @@
   position: absolute;
   top: 64px;
   right:0;
-
+  background-color:#2f80ed;
+  ;
 
 }
 .description{
@@ -279,10 +281,10 @@ height: 30px;
 
 }
 
-.kaufman_triangle{
+.kaufman__triangle{
   position: absolute;
-  right:-102px;
-  z-index: -1;
+  right:-210px;
+  z-index: 1;
   width:877px;
   height:877px;
 }
@@ -290,15 +292,17 @@ height: 30px;
 .footer{
   background-color:#000;
   color:white;
-  display:flex;
   min-height: 350px;
+  padding-top: 60px;
+  display:flex;
+  justify-content: center;
   }
 
 .footer__columns{
   display:flex;
-  justify-content: center;
-  flex-basis: 711px;
   width: 90%;
+  justify-content: space-between;
+  margin: 0px;
 }
 
 .logo_place_footer{
@@ -306,3 +310,11 @@ height: 30px;
   height: 35px;
 }
 
+.footer__column_content_copyright {
+  display: flex;
+  flex-basis: 711px;
+}
+
+.footer__author {
+  align-self: flex-end;
+}
