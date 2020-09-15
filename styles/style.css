@@ -95,7 +95,8 @@
  display: flex;
  justify-content: space-between;
  width: 80%;
-  }
+   }
+
 .two-columns__brief{
   width: 175px;
   line-height: 1.2;
@@ -110,20 +111,19 @@
   min-width: 784px;
 }
 .two-columns__paragraph{
-  margin: 0px;
+  margin-top: 0px;
+  margin-bottom: 30px;
   line-height: 34px;
   font-size:24px;
   font-weight: normal;
-}
+ }
+
 .two-columns__span-accent{
   line-height: 34px;
   font-size: 24px;
   font-weight: bold;
 }
 
-.two-columns__spacer{
-height: 30px;
-}
 
 .digits{
   display: flex;
