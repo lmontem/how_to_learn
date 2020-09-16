@@ -289,7 +289,9 @@
 }
 
 .footer__column_content_copyright {
+  display: flex;
   flex-basis: 711px;
+
 }
 
 .footer__author {
@@ -317,8 +319,7 @@
   font-size: 18px;
   font-weight: bold;
   white-space: nowrap;
-  list-style-type: none;
-  padding: 0px;
+
 }
 
 .footer__column-links {
@@ -326,6 +327,8 @@
   font-size: 18px;
   font-weight: normal;
   margin-top: 0px;
+  list-style-type: none;
+  padding: 0px;
 }
 
 .footer__column-links:first-of-type{
