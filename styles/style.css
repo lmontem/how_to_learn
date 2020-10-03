@@ -143,35 +143,33 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  border: 1px solid red;
   margin:auto;
-
 }
 
 .cards{
   list-style-type: none;
   display:flex;
   flex-wrap: wrap;
-  border: 1px solid red;
   margin-top: 0;
+  padding: 0px;
   width: 920px;
-
+  justify-content: center;
 }
 
 .cards__item{
   width: 240px;
-  border: 1px solid red;
+  margin-right: 100px;
 }
 
-
+.cards__item:nth-of-type(3n){
+  margin-right: 0px;
+}
 
 .cards__image{
   width: 160px;
   height: 160px;
   border-radius:50%;
   margin:60px 40px 43px;
-
-  border: 1px solid red;
 }
 
 .cards__title{
@@ -181,7 +179,6 @@
   margin-top: 0;
   margin-bottom: 16px;
   text-align: center;
-  border: 1px solid red;
 }
 
 .cards__description{
@@ -190,7 +187,6 @@
   font-weight: normal;
   margin: 0;
   text-align: center;
-  border: 1px solid red;
 }
 
 .video{
@@ -198,23 +194,24 @@
   flex-direction: column;
   align-items: center;
   padding-top: 100px;
-  border: 1px solid red;
 }
 
 .video__iframes{
   margin: auto;
   padding-top: 50px;
-  border: 1px solid red;
 }
 .video__iframe{
   margin-left: 20px;
-  border: 1px solid red;
+}
+
+.video__iframe:first-of-type{
+  margin-left: 0px;
 }
 
 .oakley{
   background-color: #f2f2f2;
   padding-top: 160px;
-  border: 1px solid red;
+  margin-top: -60px;
 }
 
 
@@ -337,24 +334,20 @@
 .khan__container{
   width: 80%;
   margin: auto;
-  border:1px solid red;
 }
 .khan__author{
   line-height: 42px;
   font-size: 30px;
   font-weight: normal;
   margin: 0;
-  border:1px solid red;
 }
 .khan__title{
-  border:1px solid red;
   line-height: 1.15;
   font-size: 60px;
   font-weight: bold;
   margin: 0;
 }
 .khan__quote{
-  border:1px solid red;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
@@ -363,7 +356,6 @@
   margin-bottom: 36px;
 }
 .khan__quote-author{
-  border:1px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: bold;
@@ -372,7 +364,6 @@
 }
 
 .khan__quote-author-subline{
-  border:1px solid red;
   line-height: 1.15;
   font-size: 24px;
   font-weight: normal;
@@ -388,12 +379,9 @@
 .khan__book-pic{
   width: 620px;
   height: 608px;
-
-  border:1px solid red;
 }
 
 .khan__buy-link{
-  border:1px solid red;
   text-decoration: none;
   color:#2f80ed;
   transition: opacity 5s linear ease-in;
@@ -443,7 +431,7 @@
   height:877px;
   background-image: url("../images/kaufman-triangle.svg");
   z-index: -1;
-  animation: rotation 20s linear infinite  normal forwards;
+  animation: rotation 20s linear infinite normal forwards;
   }
 
   .resources{
@@ -457,11 +445,11 @@
     width: 1100px;
     margin: auto;
     display: flex;
+    padding-top: 80px;
+    padding-bottom: 217px;
   }
 
   .resources__logo{
-    margin-top: 80px;
-    margin-bottom: 217px;
     width: 270px;
     height: 38px;
   }
